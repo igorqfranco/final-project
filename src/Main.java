@@ -102,6 +102,7 @@ public class Main {
                         MonstroDeAr monstroDeAr = new MonstroDeAr(apelido);
 
                         Jogador jogador = new Jogador(nome, monstroDeAr);
+                        painel.mostrarPainel(jogador, monstroDeAr);
                         break;
                     } else {
                         System.out.println("Parabéns você adquiriu um monstro raro! O poderoso Rola-Bosta!");
@@ -109,6 +110,7 @@ public class Main {
                         RolaBosta rolaBosta = new RolaBosta("Rola Bosta");
 
                         Jogador jogador = new Jogador(nome, rolaBosta);
+                      painel.mostrarPainel(jogador, rolaBosta);
                         break;
                     }
                 } else {
@@ -120,6 +122,7 @@ public class Main {
             }
 
         }while (true);
+
 
     }
 }
