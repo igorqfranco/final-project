@@ -67,19 +67,31 @@ public class Main {
 
 
         /**
-         * ==============================
-         *        PAINEL DE BATALHA
-         * ==============================
-         * Jogador: Igor
-         * Monstro: Dragor (Fogo)
-         * Vida: 85
+         * if (opcao == 1){
+         *             System.out.println("Você adquiriu um Monstro do tipo d'água!");
+         *             System.out.print("Dê um apelido para ele(a):");
+         *             String apelido = sc.nextLine();
          *
-         * Inimigo: AquaLord
-         * Vida: 60
-         * ==============================
-         * 1 - Atacar
-         * 2 - Usar Poção
-         * 3 - Fugir
+         *             MonstroDeAgua monstroDeAgua = new MonstroDeAgua(apelido);
+         *
+         *             Jogador jogador = new Jogador(nome, monstroDeAgua);
+         *         }
+         *         else if (opcao == 2){
+         *             System.out.println("Você adquiriu um Monstro do tipo de Fogo!");
+         *             System.out.print("Dê um apelido para ele(a):");
+         *         }
+         *         else if (opcao == 3){
+         *             System.out.println("Você adquiriu um Monstro do tipo de Terra!");
+         *             System.out.print("Dê um apelido para ele(a):");
+         *         }
+         *         else if (opcao == 4){
+         *             System.out.println("Você adquiriu um Monstro do tipo de Ar!");
+         *             System.out.print("Dê um apelido para ele(a):");
+         *         }
+         *         else if (opcao == 5){
+         *             System.out.println("Parabéns você adquiriu um monstro raro! O poderoso Rola-Bosta!");
+         *
+         *         }
          */
     }
 }
