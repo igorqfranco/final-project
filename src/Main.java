@@ -1,7 +1,5 @@
-import monstros.MonstroComum;
-import monstros.MonstroDeAgua;
 import monstros.MonstroDeFogo;
-import usuario.Jogador;
+import jogador.Jogador;
 
 import java.util.Scanner;
 
@@ -20,7 +18,11 @@ public class Main {
         System.out.println();
         System.out.println(">>> Aperte ENTER para começar <<<");
         sc.nextLine();
-        System.out.printf("");
+        System.out.println();
+
+        System.out.println("Agora iremos criar seu personagem");
+        System.out.print("Digite seu nome: ");
+        String nome = sc.nextLine();
 
 
 
@@ -40,25 +42,5 @@ public class Main {
          * 2 - Usar Poção
          * 3 - Fugir
          */
-
-        System.out.println("Digite o nome do monstro: ");
-        String nome = sc.nextLine();
-
-        MonstroDeFogo m = new MonstroDeFogo(nome);
-
-        System.out.println(m.nome);
-        System.out.println(m.tipo);
-        System.out.println(m.dano);
-
-        System.out.println("========");
-
-        Jogador j = new Jogador("Breno", m);
-
-        System.out.println(j.getNome());
-        System.out.println(m.nome);
-        System.out.println(j.getPocaoHp());
-        System.out.println(j.getPocaoIm());
-
-
     }
 }

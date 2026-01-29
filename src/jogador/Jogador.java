@@ -1,4 +1,4 @@
-package usuario;
+package jogador;
 
 import monstros.Monstro;
 
