@@ -12,5 +12,4 @@ public class Monstro {
         this.dano = 10;
         this.vida = 30;
     }
-
 }
