@@ -1,4 +1,4 @@
 package monstros;
 
-public class MonstroDeFogo {
+public class MonstroDeFogo  extends Monstro{
 }
