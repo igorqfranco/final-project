@@ -117,7 +117,7 @@ public class Main {
                         RolaBosta rolaBosta = new RolaBosta("Rola Bosta");
 
                         Jogador jogador = new Jogador(nome, rolaBosta);
-                      painel.menuPainel(jogador, rolaBosta);
+                        painel.menuPainel(jogador, rolaBosta);
                         break;
                     }
                 } else {

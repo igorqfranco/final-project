@@ -29,19 +29,17 @@ public class Paineis {
 
         System.out.println("========================================");
     }
-        public void menuPainel(Jogador jogador, Monstro m) {
-            System.out.println("==============================");
-            System.out.println("        STATUS DO JOGADOR");
-            System.out.println("==============================");
-            System.out.println("Jogador : " + jogador.getNome());
-            System.out.println("Monstro : " + m.nome + " (" + m.tipo.toUpperCase() + ")");
-            System.out.println("Vida    : " + (int)m.vida);
-            System.out.println();
-            System.out.println("Poções HP : " + jogador.getPocaoHp());
-            System.out.println("Imunidade : " + jogador.getPocaoIm());
-            System.out.println("==============================");
-        }
+
+    public void menuPainel(Jogador jogador, Monstro m) {
+        System.out.println("==============================");
+        System.out.println("        STATUS DO JOGADOR");
+        System.out.println("==============================");
+        System.out.println("Jogador : " + jogador.getNome());
+        System.out.println("Monstro : " + m.getNome() + " (" + m.getTipo().toUpperCase() + ")");
+        System.out.println("Vida    : " + (int)m.getVida());
+        System.out.println();
+        System.out.println("Poções HP : " + jogador.getPocaoHp());
+        System.out.println("Imunidade : " + jogador.getPocaoIm());
+        System.out.println("==============================");
     }
-
-
-
+}
