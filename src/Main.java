@@ -190,7 +190,14 @@ public class Main {
         if (!lutaTutorial.vitoria){
             System.out.println("\n=== GAME OVER ===");
         } else {
-            //TODO faz o código aqui
+            painel.painelLutaUm();
+
+            LutaUm lutaUm = new LutaUm(jogador);
+
+            lutaUm.iniciarLutaUm();
+
+
+
         }
     }
 }

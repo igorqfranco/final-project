@@ -40,5 +40,9 @@ public class LutaUm {
         }
     }
 
+    public void iniciarLutaUm(){
+        paineis.painelStatusBatalha(jogador,monstroInimigo,jogadorInimigo);
+    }
+
 
 }

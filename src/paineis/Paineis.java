@@ -89,7 +89,7 @@ public class Paineis {
         }
     }
 
-    public void painelLutaUm(String nomeInimigo, String nomeMonstroInimigo) {
+    public void painelLutaUm() {
         pausa(800);
         System.out.println("\n======================================");
         System.out.println("        MENSAGEM DA ARENA");
@@ -111,5 +111,32 @@ public class Paineis {
 
         System.out.println("======================================");
     }
+
+    public void painelStatusBatalha(Jogador jogador, Monstro monstroInimigo, Jogador nomeInimigo) {
+        System.out.println("\n======================================");
+        System.out.println("          STATUS DA BATALHA");
+        System.out.println("======================================");
+        System.out.println();
+
+        System.out.println(">>> JOGADOR");
+        System.out.println("Nome    : " + jogador.getNome());
+        System.out.println("Monstro : " + jogador.getMonstro().getNome()
+                + " (" + jogador.getMonstro().getTipo().toUpperCase() + ")");
+        System.out.println("Vida    : " + jogador.getMonstro().getVida());
+        System.out.println();
+
+        System.out.println("--------------------------------------");
+        System.out.println();
+
+        System.out.println(">>> INIMIGO");
+        System.out.println("Nome    : " + nomeInimigo.getNome());
+        System.out.println("Monstro : " + monstroInimigo.getNome()
+                + " (" + monstroInimigo.getTipo().toUpperCase() + ")");
+        System.out.println("Vida    : " + (int) monstroInimigo.getVida());
+        System.out.println();
+
+        System.out.println("======================================");
+    }
+
 
 }
