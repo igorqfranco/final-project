@@ -185,5 +185,7 @@ public class Main {
 
         lutaTutorial luta = new lutaTutorial(jogador);
         luta.iniciar();
+
+
     }
 }
